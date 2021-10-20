@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Meteo</title>
+</head>
+<body>
+    <div class='logo_container'>
+        <img class='logo' src="img/logo_weather.png" alt="">
+        <h1>Weather</h1>
+    </div>
+    
+    
+    <main>
+        <!-- Heure en temp reel  -->
+        <div id="heure_exacte"></div>
+        <hr>
+        <!-- Menu -->
+        <div class="menu">
+            <ul>
+                <li>Paris</li>
+                <li>Madrid</li>
+                <li>Londres</li>
+                <li>Berlin</li>
+                <li>Rome</li>
+                <li>Moscou</li>
+            </ul>
+        <!-- Search Bar -->
+            <div class="search">
+                <input id="bar" type="text" placeholder="Rechecher une ville.">
+                <button id="valid">🔍</button>
+            </div>
+        </div>
+        <!-- Card Container -->
+        <div class="container_card">
+            <div class="localisation">
+                <p class="pins">📍</p>
+                <p id="lieu"></p>
+            </div>
+            <hr style="width: 25%;">
+            <div class="card">
+                <div class="img">
+                    <img id= "icn" src="" alt="">
+                </div>
+                <hr style="transform: rotate(90deg); width: 200px;">
+                <div class="text_card">
+                        <p id="temp"></p>
+                        <p id="hum"></p>
+                        <p id="descript"></p>  
+                </div>
+            
+            
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

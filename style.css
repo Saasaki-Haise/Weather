@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+body {
+    background-image: url('img/meteo_13.png');
+    background-color: rgba(20,21,26,255);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+}
+
+/*     LOGO     */
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 160px;
+}
+
+/*     MAIN     */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.788);
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    
+}
+main div {
+    display: flex;
+    align-items: center;
+}
+main hr {
+    border: 0.5px solid rgb(192, 192, 192);
+    margin-bottom: 20px;
+    width: 5%;
+    opacity: 0.3;
+}
+/*     MENU     */
+.menu {
+    width: 60%;
+}
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.menu ul li {
+    font-size: 20px;
+}
+/*     HEURE EN TEMP REEL     */
+#heure_exacte {
+    margin-bottom: 2px;
+    font-size: 55px;
+}
+/*     SEARCH BAR     */
+main .search {
+    
+    margin: 5px;
+}
+main #bar {
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 30px;
+    width: 200px;
+    background-color: rgba(40,44,60, 0.45);
+}
+main #bar:focus {
+    outline: none;
+}
+#valid {
+    margin: 3px;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    background-color: rgba(40,44,60, 0.45);
+}
+
+/*     CARD     */
+.container_card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(40,44,60, 0.45);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(40,44,60, 0.65);
+    width: 60%;
+}
+.container_card .card {
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    align-items: center;
+}
+.container_card .card .text_card {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+.container_card .card .text_card p {
+    margin: 15px;
+}
+.container_card .card .text_card #hum {
+    font-size: 20px;
+}
+.container_card .card #hour {
+    font-size: 15px;
+}
+.container_card .card #lieu {
+    font-size: 100px;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+}
+.container_card .card #temp {
+    font-size: 70px;
+}
+#icn {
+    height: 250px;
+}
+main .localisation {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+main .localisation p {
+    height: 100px;
+    font-size: 40px;
+    margin: 10px 5px;
+    padding: 1px;
+}
+main .localisation .pins {
+    font-size: 20px;
+    padding: 2px;
+}
+  
+ 
+       
